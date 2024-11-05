@@ -1,7 +1,7 @@
-U.S. Obesity Rate Analysis Project
+# U.S. Obesity Rate Analysis Project
 This project aims to analyze obesity rates in different regions of the United States, using specific data to explore regional patterns and create visualizations that facilitate understanding of the differences across areas.
 
-Table of Contents
+# Table of Contents
 Overview
 Installation
 Usage
@@ -12,14 +12,14 @@ License
 Overview
 The project utilizes visualization libraries like Plotly to create bar charts and pie charts that show the distribution of obesity rates across U.S. regions. These visualizations help identify patterns and provide insights into how obesity varies in different parts of the country.
 
-Key Features
+## Key Features
 Calculation and visualization of average obesity rates by region.
 Interactive visualizations in bar and pie chart formats to highlight regional differences.
 Option to highlight specific regions for better analysis.
 Installation
 To run this project, you’ll need Python 3 and the specified libraries. Follow the steps below:
 
-Clone the repository:
+## Clone the repository:
 bash
 Copy code
 git clone https://github.com/your-username/us-obesity-analysis.git
@@ -34,13 +34,13 @@ pip install -r requirements.txt
 Usage
 After installation, you can run the main script to generate the visualizations:
 
-bash
+## bash
 Copy code
 python main.py
 Code Example
 Below is an example of how the average obesity rates are calculated, and a pie chart is generated with the Plotly library:
 
-python
+## python
 Copy code
 import plotly.graph_objects as go
 
@@ -57,7 +57,7 @@ mean_values = [
 fig = go.Figure(data=[go.Pie(labels=regional_divisions, values=mean_values, pull=[0, 0, 0, 0.1, 0.1])])
 fig.update_layout(title="Obesity Rate Distribution by Region")
 fig.show()
-Visualizations
+## Visualizations
 The project includes interactive visualizations to highlight obesity rates across different U.S. regions:
 
 Bar Chart: Compares the average rates between regions.
